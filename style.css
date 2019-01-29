@@ -8,6 +8,7 @@ body {
   text-align: center;
   padding: 40px 0px 0px 0px;
   color:  #ffffff;
+  font-size: 40px;
 }
 
 h2 {
@@ -50,7 +51,6 @@ img {
   background-position: 2%;
   background-size: 35px;
   height: 50px;
-  padding: 0px;
 }
 
 li {
@@ -64,6 +64,10 @@ li {
 a {
   text-decoration: none;
   color: #000000;
+}
+
+li a:hover {
+  color: white;
 }
 
 .Main {
@@ -116,11 +120,16 @@ button {
   display: none;
 }
 
+.desktop-buttons {
+  text-align: center;
+}
+
 .desktop-buttons h3 {
   display: inline-block;
   width: 28%;
-  margin: auto 20px auto 20px;
+  margin: auto 20px;
   font-weight: lighter;
+  overflow: auto;
 }
 
 footer {
@@ -141,14 +150,30 @@ h4 {
   margin: auto;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+
+.column {
+  display: block;
+  width: 100%;
+}
+.mobile-buttons h3{
+  display: block;
+  width: 100%;
+}
+
+.desktop-buttons h3{
+  display: none;
+}
+
+}
+
+@media screen and (max-width: 600px) {
 
 .Navigation {
   height: 200px;
   text-align: center;
   top: -4px;
   background-position: 50% 90%;
-
  }
 
 ul {
@@ -158,8 +183,11 @@ ul {
 li {
     display: block;
     border: 2px solid black;
-    
  }
+
+ li a:hover {
+  color: white;
+}
 
 .column {
   display: block;
@@ -176,6 +204,7 @@ li {
  }
 
 }
+
 
 
 
